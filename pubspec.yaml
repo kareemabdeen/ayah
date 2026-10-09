@@ -1,0 +1,41 @@
+name: ayah
+description: "Ayah — آية. One Ayah. Every Day. Until You Memorize the Quran."
+publish_to: "none"
+version: 0.1.0+1
+
+environment:
+  sdk: ">=3.6.0 <4.0.0"
+  flutter: ">=3.27.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+
+  # State management
+  flutter_bloc: ^9.1.0
+  equatable: ^2.0.7
+
+  # DI
+  get_it: ^8.0.3
+
+  # Infrastructure (each one is hidden behind an interface in lib/core/services)
+  hive_ce: ^2.11.0
+  hive_ce_flutter: ^2.3.0
+  http: ^1.4.0
+  just_audio: ^0.10.4
+  flutter_local_notifications: ^19.4.0
+  timezone: ^0.10.1
+  flutter_timezone: ^4.1.0
+
+  # Typography (Quran + UI fonts). Bundle the TTFs before release — see docs/PLATFORM_SETUP.md
+  google_fonts: ^6.2.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+
+flutter:
+  uses-material-design: true
